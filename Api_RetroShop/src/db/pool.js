@@ -2,7 +2,7 @@ import "dotenv/config";
 import mysql from "mysql2/promise";
 
 const { DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME } = process.env;
-
+//hay q borra dbase name
 const pool = mysql.createPool({
   database: DB_NAME,
   host: DB_HOST,
